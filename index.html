@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Write a program to find the count of uppercase and lowercase letters in the string
+
+      let str = "HeLLo WorlD";
+      let upperCount = 0;
+      let lowerCount = 0;
+      let emptySpaceCount = 0;
+
+      for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+
+        if (char >= "A" && char <= "Z") {
+          upperCount++;
+        } else if (char >= "a" && char <= "z") {
+          lowerCount++;
+        } else {
+          emptySpaceCount++;
+        }
+      }
+      console.log("Uppercase Count:", upperCount);
+      console.log("Lowercase Count:", lowerCount);
+      console.log("Empty Space Count:", emptySpaceCount);
+
+      //   Write a program to find the count of consonants in the string
+      
+      let string = "Hello World";
+      let vowels = "aeiou ";
+      let count = 0;
+      for (i of string) {
+        if (!vowels.includes(i)) {
+          count++;
+        }
+      }
+      console.log(count);
+    </script>
+  </body>
+</html>
